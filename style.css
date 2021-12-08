@@ -4,12 +4,13 @@
             }
             input
             {
-                width:80%;
+                width:75%;
                 height:10vw;
                 float:left;
                 margin-left:10%;
                 font-size:4vw;
                 margin-bottom:10vw;
+                padding-left:5%;
             }
             .area
             {
