@@ -3,8 +3,10 @@
                 let height=Number(document.getElementById("height").value)/100;
                 let weight=Number(document.getElementById("weight").value);
                 let BMI=(weight/(height*height)).toFixed(2);
-                document.getElementsByClassName("res")[0].style.display='block';   
-                if(BMI<18.5)
+                document.getElementsByClassName("res")[0].style.display='block';  
+                if(BMI.toString()==="NaN")
+                    document.getElementById("result").innerHTML="Please Enter The Required Data...";
+                else if(BMI<18.5)
                 {
                     let msg="Your BMI is "+BMI.toString()+"! You are underweight...";
                     document.getElementById("result").innerHTML=msg;
