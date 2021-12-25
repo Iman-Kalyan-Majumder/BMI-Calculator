@@ -1,18 +1,84 @@
-            body
-            {
-                background-color: white;
-                font-family: Times New Roman;
-            }
+        body
+        {
+            background-color: rgb(233, 233, 233);
+            font-family: Times New Roman;
+        }
+        .heading
+        {
+            float:left;
+            font-size:5vw;
+            text-align: center;
+            width:100%;
+            margin-top:1vw;
+            color:#03224e;
+            font-weight: bold;
+        }
+        .area
+        {
+            background-image: linear-gradient(to bottom right,grey, silver);
+            width:30vw;
+            height:30vw;
+            position: relative;
+            top:2vw;
+            padding-top: 5vw;
+            float:left;
+            margin-left:17vw;
+            box-shadow: 0.1vw 0.1vw 0.1vw silver, -0.1vw -0.1vw 0.1vw silver,-0.1vw 0.1vw 0.1vw silver, 0.1vw -0.1vw 0.1vw silver;
+        }
+        input
+        {
+            width:75%;
+            height:3vw;
+            float:left;
+            margin-left:10%;
+            font-size:1.8vw;
+            margin-bottom:3vw;
+            padding-left:5%;
+        }
+        ::placeholder
+        {
+            color:#03224e;
+            opacity:1;
+        }
+        .button
+        {
+            float:left;
+            margin-left:7vw;
+            margin-top:5vw;
+            font-size: 2vw;
+            padding:2vw;
+            background-image: linear-gradient(to bottom right,#486DA2,#0A0D1D);
+            color:white;
+            border-radius: 1vw;
+            user-select: none;
+        }
+        .button:hover
+        {
+            cursor: pointer;                
+            background-image: linear-gradient(to bottom right,#0A0D1D,#486DA2);
+        }
+        .res
+        {
+            float:left;
+            width:20vw;
+            height:25vw;
+            margin-left:4vw;
+            background-image: linear-gradient(to bottom right,silver,grey);
+            margin-top:1.9vw;
+            padding:5vw;
+            font-size:3vw;
+            color:#03224e;
+            text-align:center;
+            font-weight:bold;
+            box-shadow: 0.1vw 0.1vw 0.1vw silver, -0.1vw -0.1vw 0.1vw silver,-0.1vw 0.1vw 0.1vw silver, 0.1vw -0.1vw 0.1vw silver;
+        }
+        @media screen and (max-width: 600px)
+        {
             input
             {
-                width:75%;
                 height:10vw;
-                float:left;
-                margin-left:10%;
                 font-size:4vw;
                 margin-bottom:10vw;
-                padding-left:5%;
-                color:black;
             }
             .area
             {
@@ -28,19 +94,11 @@
             }
             .button
             {
-                float:left;
                 margin-left:21vw;
                 margin-top:2.5vw;
                 font-size: 4vw;
                 padding:4vw;
-                background-image: linear-gradient(to bottom right,#486DA2,#0A0D1D);
-                color:white;
                 border-radius: 2vw;
-                user-select: none;
-            }
-            .button:hover
-            {
-                cursor: pointer;
             }
             .heading
             {
@@ -54,17 +112,11 @@
             }
             .res
             {
-                float:left;
                 width:65vw;
                 height:20vw;
                 margin-left:11.5vw;
-                background-image: linear-gradient(to bottom right,silver,grey);
                 margin-top:20vw;
-                padding:5vw;
                 font-size:5vw;
-                color:#03224e;
-                text-align:center;
-                font-weight:bold;
                 display: none;
                 box-shadow: 0.5vw 0.5vw 0.5vw silver, -0.5vw -0.5vw 0.5vw silver,-0.5vw 0.5vw 0.5vw silver, 0.5vw -0.5vw 0.5vw silver;
             }
@@ -72,8 +124,8 @@
             {
                 margin-top:1.5vw;
             }
-            ::placeholder
+            .reshead
             {
-                color:#03224e;
-                opacity:1;
+                display: none;
             }
+        }
