@@ -4,13 +4,13 @@
                 let weight=Number(document.getElementById("weight").value);
                 
                 if(height<=0||weight<=0)
-                    document.getElementsByClassname("res").innerHTML="Please Enter The Required Data Properly...";
+                    document.getElementsByClassname("res")[0].innerHTML="Please Enter The Data Properly...";
                 else
                 {
                         let BMI=(weight/(height*height)).toFixed(2);
                         document.getElementsByClassName("res")[0].style.display='block';  
                         if(BMI.toString()==="NaN")
-                                    document.getElementById("result").innerHTML="Please Enter The Required Data...";
+                                    document.getElementById("result").innerHTML="Please Enter The Data Properly...";
                         else if(BMI<18.5)
                         {
                                     let msg="Your BMI is "+BMI.toString()+"! You are underweight...";
