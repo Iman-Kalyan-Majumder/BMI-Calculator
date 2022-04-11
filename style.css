@@ -1,6 +1,6 @@
         body
         {
-            background-color: rgb(233, 233, 233);
+            background-color: white;
             font-family: Times New Roman;
         }
         .heading
@@ -15,7 +15,7 @@
         }
         .area
         {
-            background-image: linear-gradient(to bottom right,grey, silver);
+            background-image: beige;
             width:30vw;
             height:30vw;
             position: relative;
@@ -63,7 +63,7 @@
             width:20vw;
             height:25vw;
             margin-left:4vw;
-            background-image: linear-gradient(to bottom right,silver,grey);
+            background-image: beige;
             margin-top:1.9vw;
             padding:5vw;
             font-size:3vw;
