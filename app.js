@@ -4,7 +4,7 @@
                 let weight=Number(document.getElementById("weight").value);
                 
                 if(height<=0||weight<=0)
-                    document.getElementsByClassname("res")[0].innerHTML="Please Enter The Data Properly...";
+                    document.getElementById("result").innerHTML="Please Enter The Data Properly...";
                 else
                 {
                         let BMI=(weight/(height*height)).toFixed(2);
